@@ -17,11 +17,12 @@ class MovieViewController: UIViewController {
     @IBOutlet weak var lbDuration: UILabel!
     @IBOutlet weak var lbScore: UILabel!
     @IBOutlet weak var tvSinopsis: UITextView!
+    @IBOutlet weak var lbUrl: UILabel!
     
     // MARK: Super Methods
     override func viewDidLoad() {
         super.viewDidLoad()
-        // Do any additional setup after loading the view, typically from a nib.
+        self.lbUrl.text = "http://www.netflix.com"
     }
 
     @IBAction func changeTitle(_ sender: UIButton) {

@@ -87,6 +87,10 @@
                                         <fontDescription key="fontDescription" type="system" pointSize="14"/>
                                         <nil key="textColor"/>
                                         <nil key="highlightedColor"/>
+                                        <variation key="heightClass=compact">
+                                            <fontDescription key="fontDescription" type="system" pointSize="16"/>
+                                            <color key="textColor" red="1" green="0.071741149341799759" blue="0.0" alpha="1" colorSpace="calibratedRGB"/>
+                                        </variation>
                                     </label>
                                     <textView clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="scaleToFill" textAlignment="natural" translatesAutoresizingMaskIntoConstraints="NO" id="azx-6d-eB6">
                                         <rect key="frame" x="16" y="30" width="252" height="282"/>
@@ -96,17 +100,39 @@
                                         <fontDescription key="fontDescription" type="system" pointSize="14"/>
                                         <textInputTraits key="textInputTraits" autocapitalizationType="sentences"/>
                                     </textView>
+                                    <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Label" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="Gog-rU-frG">
+                                        <rect key="frame" x="16" y="291" width="252" height="21"/>
+                                        <constraints>
+                                            <constraint firstAttribute="height" constant="21" id="Ydk-pH-TnH"/>
+                                        </constraints>
+                                        <fontDescription key="fontDescription" type="system" pointSize="17"/>
+                                        <nil key="textColor"/>
+                                        <nil key="highlightedColor"/>
+                                    </label>
                                 </subviews>
                                 <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
                                 <constraints>
                                     <constraint firstItem="azx-6d-eB6" firstAttribute="top" secondItem="Mqr-Vo-k6i" secondAttribute="bottom" constant="4" id="0nb-LN-jnX"/>
                                     <constraint firstItem="Mqr-Vo-k6i" firstAttribute="leading" secondItem="QxK-ZM-7IG" secondAttribute="leading" constant="16" id="3N3-mR-RIp"/>
+                                    <constraint firstAttribute="trailing" secondItem="Gog-rU-frG" secondAttribute="trailing" constant="16" id="3rQ-0Y-gi8"/>
                                     <constraint firstAttribute="bottom" secondItem="azx-6d-eB6" secondAttribute="bottom" constant="8" id="6oq-j9-g9C"/>
+                                    <constraint firstAttribute="bottom" secondItem="Gog-rU-frG" secondAttribute="bottom" constant="8" id="JVX-bT-sGM"/>
                                     <constraint firstItem="Mqr-Vo-k6i" firstAttribute="top" secondItem="QxK-ZM-7IG" secondAttribute="top" constant="9" id="VQS-pu-nTU"/>
                                     <constraint firstAttribute="trailing" secondItem="Mqr-Vo-k6i" secondAttribute="trailing" constant="16" id="aGx-OS-cfO"/>
+                                    <constraint firstItem="Gog-rU-frG" firstAttribute="leading" secondItem="QxK-ZM-7IG" secondAttribute="leading" constant="16" id="eJv-A1-FeK"/>
                                     <constraint firstItem="azx-6d-eB6" firstAttribute="leading" secondItem="QxK-ZM-7IG" secondAttribute="leading" constant="16" id="nrl-V1-c0a"/>
                                     <constraint firstAttribute="trailing" secondItem="azx-6d-eB6" secondAttribute="trailing" constant="16" id="rgb-6G-SNR"/>
                                 </constraints>
+                                <variation key="default">
+                                    <mask key="subviews">
+                                        <exclude reference="Gog-rU-frG"/>
+                                    </mask>
+                                </variation>
+                                <variation key="heightClass=compact">
+                                    <mask key="subviews">
+                                        <include reference="Gog-rU-frG"/>
+                                    </mask>
+                                </variation>
                             </view>
                         </subviews>
                         <color key="backgroundColor" red="0.1333333333" green="0.1333333333" blue="0.1333333333" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
@@ -160,12 +186,13 @@
                         <outlet property="lbGenre" destination="G1h-jB-QLH" id="lyJ-gl-c3f"/>
                         <outlet property="lbScore" destination="qU8-yH-LT9" id="jgI-zd-sac"/>
                         <outlet property="lbTitle" destination="8At-yr-658" id="Iw0-zN-3is"/>
+                        <outlet property="lbUrl" destination="Gog-rU-frG" id="NeM-qA-fhb"/>
                         <outlet property="tvSinopsis" destination="azx-6d-eB6" id="kTo-Ta-DXY"/>
                     </connections>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="dkx-z0-nzr" sceneMemberID="firstResponder"/>
             </objects>
-            <point key="canvasLocation" x="1595.625" y="91.901408450704224"/>
+            <point key="canvasLocation" x="1595.0704225352113" y="91.875"/>
         </scene>
     </scenes>
     <resources>
